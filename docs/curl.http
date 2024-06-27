@@ -1,0 +1,45 @@
+POST https://aca-employeeapi-vnext-san-001.proudsand-bcf65c39.southafricanorth.azurecontainerapps.io/api/Employee/EmployeeImportBulk
+Content-Type: application/json
+
+{
+  "apiKey": "d371009e-1c3f-47cc-8a99-7915a4319ff3",
+  "clientKey": "f7bb6e25-15a3-4a2a-bf67-a0b565c95a75",
+  "echo": false,
+  "data": [
+    {
+      "employeeCode": "10000106",
+      "erpNr": "10000106",
+      "badgeNr": "0055763",
+      "surname": "RAS",
+      "initials": "HN",
+      "title": "Manager ICT",
+      "gender": "M",
+      "idNumber": "",
+      "occupation": "IT",
+      "workType": "Day Shift",
+      "status": "1",
+      "employeeType": "Permanent",
+      "contractor": "0",
+      "eligible": true,
+      "site": "CN",
+      "operationType": "Mine",
+      "location": "Cullinan",
+      "function": "SUPPORT",
+      "personnelArea": "GROUP",
+      "personnelSubarea": "ADMIN",
+      "altSite": "JHB",
+      "email": "herman.ras@petradiamonds.com",
+      "cellNr": "+27605005666",
+      "jobLevel": "D5",
+      "manager": "J Brytenbach",
+      "managerEmployeeCode": "1000003",
+      "managerEmail": "Jacques.brytenbach@petradiamonds.com",
+      "managerCellNr": "+2783556895",
+      "isManagerApprover": true,
+      "primaryCC": "ITGC-003-01",
+      "secondaryCC": "ITGC-001",
+      "thirdCC": "string",
+      "fourthCC": "string"
+    }
+  ]
+}
