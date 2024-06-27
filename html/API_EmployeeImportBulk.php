@@ -52,7 +52,7 @@ for ($i = 0; $i < count($empDataRS[0]); $i++) {
     $request['data'][$i]['fourthCC'] = "$rec[fourthCC]";
 }
 
-//DEBUG
+// DEBUG
 // echo json_encode($request);
 // die;
 
@@ -61,4 +61,4 @@ $HEAD_Data =  [
 ];
 
 $PostResult = curl($BaseURL . '/api/Employee/EmployeeImportBulk', $HEAD_Data, $_POST);
-var_dump($PostResult);
+echo $PostResult;
