@@ -1,31 +1,41 @@
 <?php
 //SQL Connect and generate JSON
-$sql = "SELECT [Staff ID]
-,[Full Names]
-,[First Name]
-,[Last Name]
-,[Occupation]
-,[Section]
-,[Job Grade]
-,[Location]
-,[Budget Point]
-,[Department]
-,[Surface/Undergrounnd]
-,[Report to]
-,[Position Start Date]
-,[Racial Group]
-,[Gender]
-,[BirthDate]
-,[Mobile number]
-,[Alternative number]
-,[Passport or ID]
-,[Contract Condition]
-,[CompanyRuleDisplay]
-,[EmailAddress]
-,[BPL_Tag]
-
-FROM [IntegrationViews].[dbo].[vPPESelect]
-ORDER BY [Staff ID] DESC;";
+$sql = "SELECT
+  employeecode,
+  erpNr,
+  badgeNr,
+  surname,
+  initials,
+  title,
+  gender,
+  idnumber,
+  occupation,
+  workType,
+  status,
+  employeeType,
+  contractor,
+  eligible,
+  Site,
+  operationType,
+  location,
+  [function],
+  personnelArea,
+  personnelSubarea,
+  altSite,
+  [Email Address],
+  [Cell Number],
+  jobLevel,
+  manager,
+  managerEmployeeCode,
+  managerEmail,
+  managerCellNr,
+  isManagerApprover,
+  primaryCC,
+  secondaryCC,
+  thirdCC,
+  fourthCC
+From
+  PPE.vPPESelect;";
 
 // echo $sql . " <br> \n\r";;
 

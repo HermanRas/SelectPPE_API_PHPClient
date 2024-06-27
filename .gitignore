@@ -1,3 +1,5 @@
 html/API/config/db.php
 
 html/config/db.php
+nginx/cert/cert.key
+nginx/cert/cert.pem
