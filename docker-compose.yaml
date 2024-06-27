@@ -3,17 +3,17 @@ version: "3.3"
 networks:
   web-network:
 
-
 services:
   php-server:
-    image: namoshek/php-mssql:8.2-fpm-alpine
+    build:
+      context: .
+      dockerfile: php.Dockerfile
     container_name: php-server
     restart: always
     volumes:
       - "./html/:/var/www/html/"
     networks:
       - web-network
-
   app-server:
     build:
       context: .
@@ -21,9 +21,11 @@ services:
     container_name: app-server
     ports:
       - "8080:80"
+      - "8443:443"
     volumes:
       - "./html/:/var/www/html/"
     depends_on:
       - php-server
     networks:
       - web-network
+    

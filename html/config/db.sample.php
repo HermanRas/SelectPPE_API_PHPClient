@@ -13,7 +13,7 @@ $db   = 'DB';
 $user = 'SQL_USER';
 $pass = 'SQL_PASS';
 
-$dsn = "sqlsrv:Server=$host;Database=$db";
+$dsn = "sqlsrv:Server=$host;Database=$db;Encrypt=no;TrustServerCertificate=yes;";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
